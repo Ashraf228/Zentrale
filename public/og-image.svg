@@ -1,0 +1,42 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#091A33"/>
+  <rect x="34" y="34" width="1132" height="562" rx="32" fill="url(#paint0_linear)"/>
+  <rect x="72" y="74" width="614" height="482" rx="28" fill="#0D2344"/>
+  <rect x="112" y="120" width="262" height="34" rx="17" fill="#173D72"/>
+  <text x="136" y="143" fill="#8EE3E3" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.8">
+    FRANKFURT · RHEIN-MAIN
+  </text>
+  <text x="112" y="235" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700">
+    <tspan x="112" dy="0">Rohrreinigung</tspan>
+    <tspan x="112" dy="74">Frankfurt &amp;</tspan>
+    <tspan x="112" dy="74">Rhein-Main</tspan>
+  </text>
+  <text x="112" y="432" fill="#D8E7F5" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400">
+    <tspan x="112" dy="0">Rohrreinigung, Kanalreinigung, TV-Inspektion,</tspan>
+    <tspan x="112" dy="42">Spülungen, Abpumpen und Notdienst</tspan>
+  </text>
+  <rect x="112" y="486" width="282" height="54" rx="27" fill="#0FB6BE"/>
+  <text x="146" y="520" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">
+    rohrreinigung-ffm24
+  </text>
+
+  <rect x="748" y="74" width="380" height="482" rx="28" fill="#F8FBFF"/>
+  <rect x="782" y="108" width="312" height="208" rx="22" fill="#DDE9F6"/>
+  <rect x="806" y="132" width="264" height="160" rx="18" fill="#123C73"/>
+  <circle cx="938" cy="212" r="62" fill="#F59E0B"/>
+  <circle cx="938" cy="212" r="24" fill="#EAF1F8"/>
+  <rect x="782" y="350" width="312" height="22" rx="11" fill="#C8DBEE"/>
+  <rect x="782" y="388" width="258" height="22" rx="11" fill="#C8DBEE"/>
+  <rect x="782" y="426" width="282" height="22" rx="11" fill="#C8DBEE"/>
+  <rect x="782" y="474" width="184" height="46" rx="23" fill="#091A33"/>
+  <text x="820" y="503" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
+    0800 123 45 67
+  </text>
+
+  <defs>
+    <linearGradient id="paint0_linear" x1="80" y1="34" x2="1124" y2="596" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B2345"/>
+      <stop offset="1" stop-color="#123D74"/>
+    </linearGradient>
+  </defs>
+</svg>
