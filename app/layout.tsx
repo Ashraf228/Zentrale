@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Suspense, type ReactNode } from "react";
 import "./globals.css";
 
@@ -55,6 +56,11 @@ export default function RootLayout({
       <body>
         <GoogleTagManagerNoscript />
         <AnalyticsScripts />
+        <Script
+          src="https://widget.soulesmartbusiness.com/loader.js"
+          data-site-key="rohrreinigung-ffm24"
+          strategy="afterInteractive"
+        />
         <Suspense fallback={null}>
           <PageViewTracker />
         </Suspense>
