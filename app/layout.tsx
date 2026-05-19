@@ -6,6 +6,7 @@ import { AnalyticsScripts, GoogleTagManagerNoscript } from "@/components/analyti
 import { PageViewTracker } from "@/components/analytics/page-view-tracker";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { SoulWidgetLoader } from "@/components/integrations/soul-widget-loader";
 import { StickyCallButton } from "@/components/layout/sticky-call-button";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buildOrganizationSchema } from "@/lib/schema";
@@ -55,11 +56,7 @@ export default function RootLayout({
       <body>
         <GoogleTagManagerNoscript />
         <AnalyticsScripts />
-        <script
-          async
-          src="https://widget.soulesmartbusiness.com/loader.js"
-          data-site-key="rohrreinigung-ffm24"
-        />
+        <SoulWidgetLoader />
         <Suspense fallback={null}>
           <PageViewTracker />
         </Suspense>
