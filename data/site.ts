@@ -2,8 +2,8 @@ export const siteConfig = {
   brandName: "rohrreinigung-ffm24",
   legalName: "rohrreinigung-ffm24",
   siteUrl: "https://www.rohrreinigung-ffm24.de",
-  phoneDisplay: "015511410215",
-  phoneHref: "tel:+4915511410215",
+  phoneDisplay: "01704347619",
+  phoneHref: "tel:+491704347619",
   email: "info@rohrreinigung-ffm24.de",
   address: {
     streetAddress: "Mainzer Landstraße 120",
