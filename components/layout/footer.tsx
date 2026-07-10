@@ -28,6 +28,17 @@ export function Footer() {
               {siteConfig.phoneDisplay}
             </TrackedPhoneLink>
             <p>{siteConfig.email}</p>
+            <p className="pt-2 text-xs text-slate-500">
+              Powered by{" "}
+              <a
+                href="https://www.helix-rohrreinigung.de/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-slate-700 transition hover:text-navy-900"
+              >
+                Helix Rohrreinigung
+              </a>
+            </p>
           </div>
         </div>
 
