@@ -38,9 +38,9 @@ const homeFaqs = [
 ];
 
 export const metadata = createMetadata({
-  title: "rohrreinigung-ffm24 | Rohrreinigung Frankfurt & Rhein-Main",
+  title: "Rohrreinigung Notdienst Frankfurt | rohrreinigung-ffm24",
   description:
-    "rohrreinigung-ffm24 für Rohrreinigung, Kanalreinigung, TV-Inspektion, Spülungen und Abpumpen in Frankfurt und Rhein-Main.",
+    "Rohrreinigung Notdienst in Frankfurt und Rhein-Main für akute Verstopfungen, Rückstau, WC-Probleme, Kanalstörungen, Spülungen und Abpumpen durch rohrreinigung-ffm24.",
   path: "/",
   keywords: [
     "Rohrreinigung",
@@ -64,7 +64,7 @@ export default function HomePage() {
         data={buildServiceSchema({
           name: "rohrreinigung-ffm24",
           description:
-            "Dienstleister für Rohrreinigung, Kanalreinigung, TV-Inspektion, Spülungen und Abpumpen in Frankfurt und Rhein-Main.",
+            "Rohrreinigung Notdienst für Frankfurt und Rhein-Main bei Verstopfung, Rückstau, Kanalproblemen, TV-Inspektion, Spülungen und Abpumpen.",
           path: "/",
         })}
       />
@@ -77,15 +77,15 @@ export default function HomePage() {
             </span>
             <div className="space-y-5">
               <h1 className="max-w-4xl text-balance text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
-                Rohrreinigung Frankfurt und Rhein-Main mit rohrreinigung-ffm24
+                Rohrreinigung Notdienst Frankfurt und Rhein-Main
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-blue-100">
-                rohrreinigung-ffm24 übernimmt Rohrreinigung, Kanalreinigung,
-                TV-Inspektion, Spülungen und Abpumpen für Privatkunden,
-                Verwaltungen und Gewerbe im Raum Frankfurt Rhein-Main. Im
-                Mittelpunkt stehen schnelle Erreichbarkeit, saubere technische
-                Einordnung und eine verlässliche Bearbeitung bei Verstopfung,
-                Rückstau und Entwässerungsproblemen.
+                rohrreinigung-ffm24 ist Ihr Ansprechpartner für
+                Rohrreinigung Notdienst, Kanalreinigung, TV-Inspektion,
+                Spülungen und Abpumpen in Frankfurt und Rhein-Main. Bei akuter
+                Verstopfung, Rückstau, WC-Ausfall oder Problemen an
+                Fallleitung und Kanal zählt eine schnelle Erreichbarkeit und
+                eine saubere technische Einordnung.
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">
@@ -103,7 +103,7 @@ export default function HomePage() {
                 label="home_hero_contact"
                 className="rounded-full border border-white/15 px-6 py-4 text-center text-base font-semibold text-white transition hover:bg-white/10"
               >
-                Rohrreinigung online anfragen
+                Notdienst online anfragen
               </TrackedLink>
             </div>
             <div className="grid gap-4 sm:grid-cols-3">
@@ -375,17 +375,17 @@ export default function HomePage() {
             <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-100">
-                  Rohrreinigung Frankfurt anfragen
+                  Rohrreinigung Notdienst Frankfurt
                 </p>
                 <h2 className="mt-3 text-3xl font-semibold tracking-tight">
-                  Jetzt Rohrreinigung oder Kanalservice anfragen
+                  Jetzt Notdienst für Rohr, Kanal oder Rückstau anfragen
                 </h2>
                 <p className="mt-4 max-w-2xl text-base leading-8 text-blue-100">
                   Für akute Verstopfungen, Rückstau, überflutete Keller,
                   wiederkehrende Ablaufprobleme oder planbare TV-Inspektionen,
                   Spülungen und Abpumparbeiten. Ein kurzer Anruf reicht oft,
-                  damit Störung, Dringlichkeit und der passende nächste Schritt
-                  direkt eingeordnet werden können.
+                  damit bei Notdienst-Fällen Störung, Dringlichkeit und der
+                  passende nächste Schritt direkt eingeordnet werden können.
                 </p>
               </div>
               <div className="flex flex-col gap-3">

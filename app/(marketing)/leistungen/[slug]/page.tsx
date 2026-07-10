@@ -41,6 +41,7 @@ export async function generateMetadata({
       `${service.name} Frankfurt`,
       `${service.name} Rhein-Main`,
       `Hilfe bei ${service.shortName.toLowerCase()}`,
+      ...(service.emergency ? [`${service.name} Notdienst Frankfurt`] : []),
     ],
   });
 }
@@ -104,6 +105,9 @@ export default async function ServicePage({
                 {service.name} in Frankfurt und Rhein-Main ist vor allem dann
                 gefragt, wenn Störungen schnell eingegrenzt, technisch sauber
                 bewertet und ohne unnötige Verzögerung bearbeitet werden sollen.
+                Bei akuten Verstopfungen, Rückstau oder Ausfall der
+                Entwässerung zählt dabei eine direkte Erreichbarkeit wie im
+                Notdienst besonders stark.
               </p>
               <p>{service.intro}</p>
             </div>

@@ -85,12 +85,59 @@ export async function generateMetadata({
     },
   };
   const metadataProfile = citySpecificMetadata[entry.city.slug];
+  const exactPageMetadata: Record<
+    string,
+    { title: string; description: string; extraKeywords: string[] }
+  > = {
+    "rohrreinigung-frankfurt": {
+      title: "Rohrreinigung Frankfurt | schnelle Hilfe bei Verstopfung",
+      description:
+        "Rohrreinigung in Frankfurt am Main durch rohrreinigung-ffm24 bei Verstopfung, Rückstau, Fallleitungsproblemen und akuten Notdienst-Fällen.",
+      extraKeywords: [
+        "Rohrreinigung Frankfurt Notdienst",
+        "Verstopfung Frankfurt",
+        "Fallleitung verstopft Frankfurt",
+      ],
+    },
+    "abflussreinigung-frankfurt": {
+      title: "Abflussreinigung Frankfurt | Hilfe bei verstopftem Abfluss",
+      description:
+        "Abflussreinigung in Frankfurt am Main durch rohrreinigung-ffm24 bei verstopfter Spüle, Dusche, Waschbecken oder akutem Abfluss-Notdienst.",
+      extraKeywords: [
+        "Abfluss Notdienst Frankfurt",
+        "Abfluss verstopft Frankfurt",
+        "Spüle verstopft Frankfurt",
+      ],
+    },
+    "kanalreinigung-frankfurt": {
+      title: "Kanalreinigung Frankfurt | schnelle Hilfe bei Rückstau",
+      description:
+        "Kanalreinigung in Frankfurt am Main durch rohrreinigung-ffm24 bei Rückstau, Grundleitungsproblemen, Kanalverstopfung und zeitkritischen Einsätzen.",
+      extraKeywords: [
+        "Kanal Notdienst Frankfurt",
+        "Rückstau Frankfurt",
+        "Grundleitung verstopft Frankfurt",
+      ],
+    },
+    "rohrreinigung-notdienst-frankfurt": {
+      title: "Rohrreinigung Notdienst Frankfurt | 24/7 schnelle Hilfe",
+      description:
+        "Rohrreinigung Notdienst in Frankfurt am Main durch rohrreinigung-ffm24 bei akuter Verstopfung, Rückstau, WC-Ausfall und Entwässerungsstörung.",
+      extraKeywords: [
+        "Notdienst Rohrreinigung Frankfurt",
+        "Rohr verstopft Notdienst Frankfurt",
+        "WC Notdienst Frankfurt",
+      ],
+    },
+  };
+  const exactMetadata = exactPageMetadata[combined];
   const description =
+    exactMetadata?.description ??
     metadataProfile?.description ??
-    `${entry.service.name} in ${entry.city.name} durch rohrreinigung-ffm24: schnelle Hilfe und fachgerechte Leistung in Ihrer Nähe.`;
+    `${entry.service.name} in ${entry.city.name} durch rohrreinigung-ffm24: schnelle Hilfe, Notdienst bei akuten Verstopfungen und fachgerechte Leistung in Ihrer Nähe.`;
 
   return createMetadata({
-    title,
+    title: exactMetadata?.title ?? title,
     description,
     path: `/${combined}`,
     keywords: [
@@ -98,6 +145,8 @@ export async function generateMetadata({
       `${entry.service.shortName} ${entry.city.name}`,
       `${entry.city.name} Rohrreinigung`,
       `${entry.city.name} Abfluss verstopft`,
+      `${entry.service.shortName} Notdienst ${entry.city.name}`,
+      ...(exactMetadata?.extraKeywords ?? []),
       ...(metadataProfile?.extraKeywords ?? []),
     ],
   });
@@ -136,6 +185,40 @@ export default async function CombinedLocationPage({
   const pageTitle = `${entry.service.name} ${entry.city.name}`;
   const relatedLocations = getRelatedLocationPages(entry.service.slug, entry.city.slug, 3);
   const cityProfile = entry.city.seoProfile;
+  const exactPageCopy: Record<
+    string,
+    { h1: string; lead: string; opener: string }
+  > = {
+    "rohrreinigung-frankfurt": {
+      h1: "Rohrreinigung Frankfurt mit schneller Hilfe bei Verstopfung",
+      lead:
+        "Rohrreinigung in Frankfurt ist besonders gefragt, wenn Wasser nicht mehr richtig abläuft, Fallleitungen Probleme machen oder Rückstau im Gebäude entsteht. Gerade in dicht bebauten Wohn- und Gewerbelagen zählt eine schnelle Hilfe mit sauberer technischer Einordnung.",
+      opener:
+        "rohrreinigung-ffm24 übernimmt Rohrreinigung in Frankfurt mit Fokus auf akute Verstopfungen, Rückstau, Fallleitungsprobleme und schnelle Kontaktwege im Notdienst-Fall.",
+    },
+    "abflussreinigung-frankfurt": {
+      h1: "Abflussreinigung Frankfurt bei verstopftem Abfluss",
+      lead:
+        "Abflussreinigung in Frankfurt wird oft kurzfristig gebraucht, wenn Spüle, Dusche, Waschbecken oder Bodenablauf nicht mehr richtig ablaufen. Bei solchen Störungen ist eine schnelle Hilfe wichtig, bevor sich das Problem in tiefere Leitungsbereiche verlagert.",
+      opener:
+        "rohrreinigung-ffm24 übernimmt Abflussreinigung in Frankfurt mit Fokus auf akute Verstopfungen, verstopfte Küchen- und Badabflüsse sowie direkte Hilfe bei zeitkritischen Ausfällen.",
+    },
+    "kanalreinigung-frankfurt": {
+      h1: "Kanalreinigung Frankfurt bei Rückstau und tieferliegenden Problemen",
+      lead:
+        "Kanalreinigung in Frankfurt wird besonders dann wichtig, wenn Rückstau auftritt, mehrere Entwässerungspunkte betroffen sind oder die Ursache tiefer im Grundstücks- und Grundleitungsbereich liegt. Solche Fälle brauchen schnelle Hilfe und eine klare technische Einordnung.",
+      opener:
+        "rohrreinigung-ffm24 übernimmt Kanalreinigung in Frankfurt mit Fokus auf Rückstau, Grundleitungsprobleme, verschlammte Leitungen und zeitkritische Störungen im Notdienst-Bereich.",
+    },
+    "rohrreinigung-notdienst-frankfurt": {
+      h1: "Rohrreinigung Notdienst Frankfurt für akute Verstopfungen",
+      lead:
+        "Der Rohrreinigung Notdienst in Frankfurt ist vor allem dann gefragt, wenn Wasser gar nicht mehr abläuft, das WC ausfällt, Rückstau entsteht oder Sanitärbereiche nicht mehr nutzbar sind. In solchen Situationen zählt eine schnelle Hilfe ohne lange Umwege.",
+      opener:
+        "rohrreinigung-ffm24 übernimmt den Rohrreinigung Notdienst in Frankfurt mit Fokus auf akute Verstopfungen, Rückstau, WC-Ausfall und schnelle telefonische Erreichbarkeit.",
+    },
+  };
+  const exactCopy = exactPageCopy[combined];
 
   return (
     <>
@@ -170,22 +253,17 @@ export default async function CombinedLocationPage({
             </span>
             <div className="space-y-4">
               <h1 className="text-4xl font-semibold tracking-tight text-navy-950 sm:text-5xl">
-                {entry.service.name} {entry.city.name} mit schneller Hilfe
+                {exactCopy?.h1 ?? `${entry.service.name} ${entry.city.name} mit schneller Hilfe und Notdienst`}
               </h1>
               <p className="max-w-3xl text-lg leading-8 text-slate-600">
-                {entry.service.name} in {entry.city.name} wird besonders dann
-                gebraucht, wenn Verstopfungen, Rückstau oder
-                Entwässerungsprobleme schnell und fachlich sauber bearbeitet
-                werden müssen. rohrreinigung-ffm24 ist dafür im
-                Rhein-Main-Gebiet auf kurze Wege und klare Einsatzvorbereitung
-                ausgerichtet.
+                {exactCopy?.lead ??
+                  `${entry.service.name} in ${entry.city.name} wird besonders dann gebraucht, wenn Verstopfungen, Rückstau oder Entwässerungsprobleme schnell und fachlich sauber bearbeitet werden müssen. rohrreinigung-ffm24 ist dafür im Rhein-Main-Gebiet auf kurze Wege und klare Einsatzvorbereitung ausgerichtet.`}
               </p>
             </div>
             <div className="prose-copy max-w-3xl text-base text-slate-700">
               <p>
-                rohrreinigung-ffm24 übernimmt {entry.service.name.toLowerCase()}{" "}
-                in {entry.city.name} mit Fokus auf schnelle Erreichbarkeit,
-                saubere technische Einordnung und direkte Kontaktwege.
+                {exactCopy?.opener ??
+                  `rohrreinigung-ffm24 übernimmt ${entry.service.name.toLowerCase()} in ${entry.city.name} mit Fokus auf schnelle Erreichbarkeit, saubere technische Einordnung, direkte Kontaktwege und kurze Reaktionszeiten bei akuten Notdienst-Fällen.`}
               </p>
               <p>{entry.city.intro}</p>
               <p>
@@ -211,7 +289,7 @@ export default async function CombinedLocationPage({
                 label={`location_${entry.city.slug}_${entry.service.slug}_contact`}
                 className="rounded-full border border-slate-200 px-6 py-4 text-center font-semibold text-navy-950 transition hover:bg-slate-50"
               >
-                Anfrage für {entry.city.name} senden
+                Notdienst-Anfrage für {entry.city.name} senden
               </TrackedLink>
             </div>
           </div>

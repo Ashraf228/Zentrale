@@ -401,9 +401,9 @@ export const services: Service[] = [
     emergency: true,
     heroTitle: "Rohrreinigung Notdienst für akute Verstopfungen",
     heroDescription:
-      "Bei Rückstau, Totalausfall oder akutem Entwässerungsproblem hilft rohrreinigung-ffm24 in Frankfurt und Rhein-Main schnell weiter.",
+      "Bei Rückstau, Totalausfall, WC-Ausfall oder akutem Entwässerungsproblem hilft der Rohrreinigung Notdienst von rohrreinigung-ffm24 in Frankfurt und Rhein-Main schnell weiter.",
     intro:
-      "Der Rohrreinigung Notdienst ist besonders dann gefragt, wenn Wasser nicht mehr abläuft, Sanitärbereiche ausfallen oder Gebäudeschäden drohen. In solchen Situationen zählt keine lange Erklärung, sondern eine schnelle Lageeinschätzung, klare Erreichbarkeit und ein zeitnah vorbereiteter Einsatz. rohrreinigung-ffm24 priorisiert solche Fälle im Raum Frankfurt Rhein-Main.",
+      "Der Rohrreinigung Notdienst ist besonders dann gefragt, wenn Wasser nicht mehr abläuft, Sanitärbereiche ausfallen, das WC überläuft oder Gebäudeschäden drohen. In solchen Situationen zählt keine lange Erklärung, sondern eine schnelle Lageeinschätzung, klare Erreichbarkeit und ein zeitnah vorbereiteter Einsatz. rohrreinigung-ffm24 priorisiert solche Fälle im Raum Frankfurt Rhein-Main.",
     causes: [
       "Komplette Verstopfungen mit Rückstaugefahr",
       "Betroffene WC-, Bad- oder Küchenleitungen gleichzeitig",
@@ -428,7 +428,7 @@ export const services: Service[] = [
     metaTitle:
       "Rohrreinigung Notdienst Frankfurt & Rhein-Main | Schnelle Hilfe",
     metaDescription:
-      "Rohrreinigung Notdienst für Haushalt, Vermieter und Gewerbe in Frankfurt und Rhein-Main durch rohrreinigung-ffm24.",
+      "Rohrreinigung Notdienst in Frankfurt und Rhein-Main für Haushalt, Vermieter und Gewerbe bei Verstopfung, Rückstau, WC-Problemen und akutem Entwässerungsausfall.",
     faq: [
       {
         question: "Wann ist ein Rohrreinigung Notdienst sinnvoll?",

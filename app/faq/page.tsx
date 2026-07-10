@@ -30,6 +30,11 @@ const faqs = [
       "Hilfreich sind der Einsatzort, der betroffene Bereich, eine kurze Beschreibung des Problems und die Information, ob Wasser noch abläuft oder bereits Rückstau besteht. Bei mehreren betroffenen Abläufen oder Kellerproblemen sollte das direkt erwähnt werden.",
   },
   {
+    question: "Wann ist ein Rohrreinigung Notdienst sinnvoll?",
+    answer:
+      "Ein Rohrreinigung Notdienst ist besonders sinnvoll, wenn Wasser gar nicht mehr abläuft, das WC überläuft, Rückstau entsteht, mehrere Bereiche gleichzeitig betroffen sind oder ein Ausfall am Abend, Wochenende oder Feiertag schnelle Hilfe erfordert.",
+  },
+  {
     question: "Wann ist eine TV-Inspektion sinnvoll?",
     answer:
       "Eine TV-Inspektion ist besonders sinnvoll, wenn Verstopfungen wiederkehren, die Ursache unklar bleibt oder ein Schaden im Leitungsverlauf vermutet wird. Sie hilft dabei, den tatsächlichen Zustand der Leitung gezielt zu beurteilen.",
