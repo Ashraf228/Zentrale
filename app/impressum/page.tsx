@@ -27,6 +27,7 @@ export default function ImpressumPage() {
             </p>
             <p>Telefon: {siteConfig.phoneDisplay}</p>
             <p>E-Mail: {siteConfig.email}</p>
+            <p>E-Mail Betreiber: info@helix-rohrreinigung.de</p>
             <p>
               Hinweis: Die Inhalte dienen als Beispiel für einen professionellen
               Dienstleister und sollten vor Livegang rechtlich final geprüft und an
